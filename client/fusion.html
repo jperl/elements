@@ -10,8 +10,11 @@
 </body>
 
 <template name="hydrogen">
-  <a-entity position="0 1 -2.5" rotation="0 0 0" geometry="primitive: torus; radius: 2.5; radiusTubular: 0.01; segmentsTubular: 100;" material="color: #868988; roughness: 0.4; metalness: 0.5;"></a-entity>
-  <a-sphere position="0 3.5 -2.5" radius="0.2" color="#7c8cff"></a-sphere>
+  <a-entity position="0 1 -2.5">
+    <a-entity geometry="primitive: torus; radius: 2.5; radiusTubular: 0.01; segmentsTubular: 100;" material="color: #868988; roughness: 0.4; metalness: 0.5;"></a-entity>
+    <a-sphere position="0 2.5 0" radius="0.2" color="#7c8cff"></a-sphere>
+    <a-animation attribute="rotation" to="0 0 360" dur="20000" easing="linear" repeat="indefinite"></a-animation>
+  </a-entity>
   <a-sphere position="0 1 -2.5" radius="0.75" color="#ff7c8c"></a-sphere>
   <a-sky color="#FFFDF6"></a-sky>
 </template>
