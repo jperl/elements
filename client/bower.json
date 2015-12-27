@@ -1,0 +1,18 @@
+{
+  "name": "elements",
+  "version": "0.0.1",
+  "dependencies": {
+    "threejs": "*",
+    "webvr-boilerplate": "*"
+  },
+  "overrides": {
+    "threejs": {
+      "main": [
+        "build/three.js",
+        "examples/js/controls/VRControls.js",
+        "examples/js/effects/VREffect.js"
+      ]
+    }
+  },
+  "private": true
+}
